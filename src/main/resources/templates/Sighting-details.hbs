@@ -1,0 +1,40 @@
+{{#partial "content"}}
+    <div class="row">
+        <div class="col-md-6">
+               <div class="Details">
+
+                     <p>REPORTED BY: {{ sighting.rangerName }}</p>
+                     <p>TIME REPORTED {{ sighting.createdAt }}</p>
+                     <p>LOCATION OF SIGHTING: {{ sighting.location }}</p>
+
+                     {{#if animal}}
+                     <p> NAME OF SIGHTING:{{ animal.name }}</p>
+                     <p>Type OF SIGHTING: {{animal.type}}</p>
+                         <div class="row">
+                              <div class="col-md-12">
+                              <div class = "col-md-12">
+                              <a class="btn btn-warning" href="/animals/sighting/{{sighting.id}}/edit">Edit</a>
+                              <a class="btn btn-warning" href="/animals/{{sighting.animalId}}/sightings/{{sighting.id}}/delete">DELETE</a>
+                         </div>
+                      </div>
+                 </div>
+               {{else}}
+                          <p>Endangered animal: {{ endangered.name }}</p>
+                          <p>Type: {{endangered.type}}</p>
+                          <div class="row">
+                          <div class="col-md-12">
+                           <div class = "col-md-12">
+                            <a class="btn btn-warning" href="/endangered/sighting/{{sighting.id}}/edit">Edit</a>
+                            <a class="btn btn-warning" href="/animals/{{sighting.animalId}}/sightings/{{sighting.id}}/delete">DELETE</a>
+                           </div>
+                         </div>
+                      </div>
+    {{/if}}
+    </div>
+    </div>
+    </div>
+
+
+{{/partial}}
+
+{{> layout.hbs}}
