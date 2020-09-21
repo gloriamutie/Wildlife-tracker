@@ -1,9 +1,9 @@
 {{#partial "content"}}
     {{#if editEndangered}}
-        <h1>WRONG DETAILS?EDIT HERE</h1>
+        <h1>Wrong details? edit here</h1>
         <form class="formstyle" action="/endangered/{{editEndangered.id}}" method="post">
             <div class="form-group">
-                <label for="name">EDIT NAME:</label>
+                <label for="name">Edit name:</label>
                 <input id="name" placeholder="Enter Endangered animal name here......" name="name" class="form-control" type="text" value="{{editEndangered.name}}">
             </div>
             <div class="form-group">
@@ -15,7 +15,7 @@
                 </select>
             </div>
             <div class="form-group">
-                <label for="health">EDIT HEALTH:</label>
+                <label for="health">Edit health:</label>
                 <select id="health" name="health" class="form-control">
                     <option value="Okay">healthy</option>
                     <option value="ill">ill</option>
@@ -23,10 +23,10 @@
 
                 </select>
             </div>
-            <button type="submit" class="button btn-warning">SUBMIT</button>
+            <button type="submit" class="button btn-warning">Submit</button>
         </form>
     {{else}}
-        <h1>ADD NEW ENDANGERED HERE:</h1>
+        <h1>New endangered here:</h1>
         <form class="formstyle" action="/endangered" method="post">
             <div class="form-group">
                 <label for="name">Enter endangered animal's name</label>
@@ -48,7 +48,7 @@
                     <option value="adult">adult</option>
                 </select>
             </div>
-            <button type="submit" class="button btn-warning">SUBMIT</button>
+            <button type="submit" class="button btn-warning">Submit</button>
         </form>
     {{/if}}
 {{/partial}}
