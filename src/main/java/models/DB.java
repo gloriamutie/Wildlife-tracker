@@ -14,7 +14,7 @@ public class DB {
     private static URI dbUri;
     public static Sql2o sql2o;
 //    postgresql-shaped-10606
-//\
+
 
 
     static {

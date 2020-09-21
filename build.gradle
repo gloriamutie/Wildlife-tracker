@@ -4,10 +4,12 @@ plugins {
 
 }
 
-group 'com.gloria.virtual'
+group 'com.gloria.wildlife'
 version '1.0-SNAPSHOT'
 
 sourceCompatibility = 1.8
+applicationName = "gwildlife"
+mainClassName = "App"
 
 repositories {
     mavenCentral()
@@ -27,7 +29,7 @@ dependencies {
       compile "com.sparkjava:spark-template-handlebars:2.5.5"
 //    compile 'org.slf4j:slf4j-simple:1.7.21'
 //    compile 'org.sql2o:sql2o:1.5.4'
-    //compile group: 'com.h2database', name: 'h2', version: '1.4.191'// we no loner need H2 dependencies because we have postgres
+      compile group: 'com.h2database', name: 'h2', version: '1.4.191'// we no loner need H2 dependencies because we have postgres
 //    compile group: 'postgresql', name: 'postgresql', version: '10.14.jdbc4' // ADD ME FOR POSTGRES VERSION 9.x
  //   compile group: 'org.postgresql', name: 'postgresql', version: '42.2.2' // ADD ME FOR POSTGRES VERSION 10.x
 
