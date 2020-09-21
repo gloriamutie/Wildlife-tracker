@@ -6,7 +6,8 @@ import org.sql2o.Sql2oException;
 
 import java.util.List;
 import java.util.Objects;
-//EndangeredAnimal inherits the Animal class.....................................................................
+
+//EndangeredAnimal inherits  Animal class.....................................................................
 public class EndangeredAnimal extends Animal{
     private String health;
     private String age;

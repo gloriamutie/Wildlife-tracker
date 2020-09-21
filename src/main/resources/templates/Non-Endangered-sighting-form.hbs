@@ -1,4 +1,9 @@
 {{#partial "content"}}
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
     {{#if editSighting}}
         <div style="color:purple; text-align: center;">
             <h1>Edit here</h1>
@@ -42,8 +47,6 @@
         <form class="formstyle" action="/animalsighting" method="post">
             {{#if animals}}
                 <div class="form-group">
-                    <hr>
-                    <hr>
                     <label for="name">Enter ranger's name</label>
                     <input id="name"  placeholder="Enter Ranger's name here......"name="name" class="form-control" type="text" value="">
                 </div>
@@ -76,11 +79,14 @@
                     <br>
                     <button type="submit" class="button  btn-warning">Submit</button>
                 </div>
+                <br>
+                <br>
+                <br>
             {{else}}
 
                 <h2 class="glow">No animal in listed. Add to list before submitting</h2>
             <br>
-            <br>
+
                 <a href="/animals/new" class="button btn-warning">New animal</a>
             {{/if}}
         </form>

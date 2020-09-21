@@ -110,7 +110,7 @@ public class AnimalTest {
         firstAnimal.save();
         Sighting firstSighting = new Sighting("Zone A", "Peter", firstAnimal.getId());
         firstSighting.save();
-        Sighting secondSighting = new Sighting("Forest Clearing", "Maureen", firstAnimal.getId());
+        Sighting secondSighting = new Sighting("Forest Clearing", "Gloria", firstAnimal.getId());
         secondSighting.save();
         assertEquals(2, firstAnimal.findSightings().size());
         assertTrue(firstAnimal.findSightings().contains(firstSighting));
