@@ -1,21 +1,21 @@
 {{#partial "content"}}
     {{#if editAnimal}}
-        <h1>EDIT HERE</h1>
+        <h1>Edit here</h1>
         <form class="formstyle" action="/animals/{{editAnimal.id}}" method="post">
             <div class="form-group">
-                <label for="name">EDIT NAME</label>
+                <label for="name">Edit name</label>
                 <input id="name" placeholder="Edit animal name here....." name="name" class="form-control" type="text" value="{{editAnimal.name}}">
             </div>
-            <button type="submit" class="button btn-default">EDIT</button>
+            <button type="submit" class="button btn-default">Edit</button>
         </form>
     {{else}}
-        <h1>ADD ANIMAL</h1>
+        <h1>Add animal</h1>
         <form class="formstyle" action="/animals" method="post">
             <div class="form-group">
                 <label for="name">Enter animal's name</label>
                 <input id="name"  placeholder="Enter animal name......"name="name" class="form-control" type="text" value="">
             </div>
-            <button type="submit" class="button btn-warning">SUBMIT</button>
+            <button type="submit" class="button btn-warning">Submit</button>
         </form>
     {{/if}}
 {{/partial}}

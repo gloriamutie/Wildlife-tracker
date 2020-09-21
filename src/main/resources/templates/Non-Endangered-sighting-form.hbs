@@ -1,7 +1,7 @@
 {{#partial "content"}}
     {{#if editSighting}}
         <div style="color:purple; text-align: center;">
-            <h1>EDIT HERE:</h1>
+            <h1>Edit here:</h1>
         </div>
         <form class="formstyle" action="/animalsighting/{{editSighting.id}}" method="post">
             <div class="form-group">
@@ -25,19 +25,19 @@
                 </select>
             </div>
             <div class="form-group">
-                <label for="animalId">EDIT ANIMAL NAME</label>
+                <label for="animalId"> Animal name</label>
                 <select id="animalId" name="animalId" class="form-control">
                     {{#each animals}}
                         <option value="{{id}}">{{name}}</option>
                     {{/each}}
                 </select>
             </div>
-            <button type="submit" class="button btn-default">SUBMIT</button>
-            <a href="/animals/new" class="button btn-warning btn-sm">ADD NEW ANIMAL TO LIST HERE</a>
+            <button type="submit" class="button btn-default">Submit</button>
+            <a href="/animals/new" class="button btn-warning btn-sm">New animal</a>
         </form>
     {{else}}
 
-            <h2 class="glow">REPORT SIGHTING HERE:</h2>
+            <h2 class="glow">Report sighting:</h2>
 
         <form class="formstyle" action="/animalsighting" method="post">
             {{#if animals}}
@@ -68,18 +68,18 @@
                     </select>
                     <br>
                     <br>
-                    <a href="/animals/new" class="button btn-warning">ADD NEW ANIMAL TO LIST HERE</a>
+                    <a href="/animals/new" class="button btn-warning">New animal</a>
                     <br>
                     <br>
                     <br>
-                    <button type="submit" class="button  btn-warning">SUBMIT</button>
+                    <button type="submit" class="button  btn-warning">Submit</button>
                 </div>
             {{else}}
 
-                <h2 class="glow">NO ANIMALS ON OUR LIST.ADD TO LIST BEFORE REPORTING</h2>
+                <h2 class="glow">No animal in listed. Add to list before submitting</h2>
             <br>
             <br>
-                <a href="/animals/new" class="button btn-warning">ADD NEW ANIMAL TO LIST HERE</a>
+                <a href="/animals/new" class="button btn-warning">New animal</a>
             {{/if}}
         </form>
     {{/if}}
