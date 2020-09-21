@@ -1,0 +1,88 @@
+{{#partial "content"}}
+    {{#if editSighting}}
+        <div style="color:purple; text-align: center;">
+            <h1>EDIT HERE:</h1>
+        </div>
+        <form class="formstyle" action="/animalsighting/{{editSighting.id}}" method="post">
+            <div class="form-group">
+                <label for="name">Edit ranger's name:</label>
+                <br>
+                <input id="name"  placeholder="Enter Ranger's name here......"name="name" class="form-control" type="text" value="{{editSighting.rangerName}}">
+            </div>
+            <br>
+            <div class="form-group">
+                <label for="location">Edit location:</label>
+                <select id="location" name="location" class="form-control">
+                    <option value="Riverbank">Riverbank</option>
+                    <option value="Forest clearing">Forest clearing</option>
+                    <option value="NE Quadrant">NE Quadrant</option>
+                    <option value="SW Quadrant">SW Quadrant</option>
+                    <option value="Southern Quadrant">Southern Quadrant</option>
+                    <option value="Eastern Valley">Eastern Valley</option>
+                    <option value="Central Dam">Central Dam</option>
+                    <option value="Water Reservoir">NE Quadrant</option>
+                    <option value="Baboon Estate">NE Quadrant</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="animalId">EDIT ANIMAL NAME</label>
+                <select id="animalId" name="animalId" class="form-control">
+                    {{#each animals}}
+                        <option value="{{id}}">{{name}}</option>
+                    {{/each}}
+                </select>
+            </div>
+            <button type="submit" class="button btn-default">SUBMIT</button>
+            <a href="/animals/new" class="button btn-warning btn-sm">ADD NEW ANIMAL TO LIST HERE</a>
+        </form>
+    {{else}}
+
+            <h2 class="glow">REPORT SIGHTING HERE:</h2>
+
+        <form class="formstyle" action="/animalsighting" method="post">
+            {{#if animals}}
+                <div class="form-group">
+                    <label for="name">Enter ranger's name:</label>
+                    <input id="name"  placeholder="Enter Ranger's name here......"name="name" class="form-control" type="text" value="">
+                </div>
+                <div class="form-group">
+                    <label for="location">Enter location:</label>
+                    <select id="location" name="location" class="form-control">
+                        <option value="Riverbank">Riverbank</option>
+                        <option value="Forest clearing">Forest clearing</option>
+                        <option value="NE Quadrant">NE Quadrant</option>
+                        <option value="SW Quadrant">SW Quadrant</option>
+                        <option value="Southern Quadrant">Southern Quadrant</option>
+                        <option value="Eastern Valley">Eastern Valley</option>
+                        <option value="Central Dam">Central Dam</option>
+                        <option value="Water Reservoir">NE Quadrant</option>
+                        <option value="Baboon Estate">NE Quadrant</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="animalId">Enter animal:</label>
+                    <select id="animalId" name="animalId" class="form-control">
+                        {{#each animals}}
+                            <option value="{{id}}">{{name}}</option>
+                        {{/each}}
+                    </select>
+                    <br>
+                    <br>
+                    <a href="/animals/new" class="button btn-warning">ADD NEW ANIMAL TO LIST HERE</a>
+                    <br>
+                    <br>
+                    <br>
+                    <button type="submit" class="button  btn-warning">SUBMIT</button>
+                </div>
+            {{else}}
+
+                <h2 class="glow">NO ANIMALS ON OUR LIST.ADD TO LIST BEFORE REPORTING</h2>
+            <br>
+            <br>
+                <a href="/animals/new" class="button btn-warning">ADD NEW ANIMAL TO LIST HERE</a>
+            {{/if}}
+        </form>
+    {{/if}}
+{{/partial}}
+
+{{> layout.hbs}}

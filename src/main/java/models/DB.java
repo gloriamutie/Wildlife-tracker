@@ -13,8 +13,7 @@ import static models.Environment.USER_NAME;
 public class DB {
     private static URI dbUri;
     public static Sql2o sql2o;
-//    postgresql-shaped-10606
-
+//    postgresql-rigid-91286
 
 
     static {
@@ -22,6 +21,7 @@ public class DB {
         try {
             if (System.getenv("DATABASE_URL") == null) {
                 dbUri = new URI("postgres://localhost:5432/wildlife_tracker");
+                
             } else {
                 dbUri = new URI(System.getenv("DATABASE_URL"));
             }
