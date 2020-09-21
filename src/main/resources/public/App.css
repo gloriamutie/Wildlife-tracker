@@ -2,6 +2,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Charm:wght@700&family=Merienda+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=El+Messiri&display=swap');
 
+ * {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
 
  body{
 background-image: url('images/impala.jpg');
@@ -498,11 +503,7 @@ button{
              background-color:green;
 
             }
-            .title{
-            background-image: url("/images/kangaroos-in-sunset.jpg");
-            background-size:cover;
 
-            }
             .fa {
               padding: 20px;
               font-size: 30px;
