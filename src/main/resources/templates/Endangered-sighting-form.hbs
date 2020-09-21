@@ -50,7 +50,7 @@
         <form class="formstyle" action="/endangeredsighting" method="post">
             {{#if endangeredAnimals}}
                 <div class="form-group">
-                    <label for="rangerName">Enter ranger's name:</label>
+                    <label for="rangerName">Enter ranger's name</label>
                     <input id="rangerName" placeholder="Enter Ranger's name here......" name="rangerName" class="form-control" type="text" value="">
                 </div>
                 <div class="form-group">
@@ -68,7 +68,7 @@
                     </select>
                 </div>
                 <div class="form-group">
-                    <label for="animalId">Enter endangered animal:</label>
+                    <label for="animalId">Enter endangered animal</label>
                     <select id="animalId" name="animalId" class="form-control">
                         {{#each endangeredAnimals}}
                             <option value="{{id}}">{{name}}</option>
