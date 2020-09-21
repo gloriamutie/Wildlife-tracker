@@ -289,15 +289,15 @@ color: white;
 }
 .glows {
   font-size: 30px;
-  color: yellow;
-  font-weight:900;
+  color: blue;
+  font-weight:100;
   text-align: center;
 
 }
 .glow {
-  font-size: 40px;
-  color: yellow;
-  font-weight:900;
+  font-size: 20px;
+  color: blue;
+  font-weight:100;
   text-align: center;
   -webkit-animation: glow 1s ease-in-out infinite alternate;
   -moz-animation: glow 1s ease-in-out infinite alternate;
@@ -335,6 +335,7 @@ color: white;
       transform: translateX(0);
     }
   }
+
 .formstyle{
 animation: 1s ease-out 0s 1 slideInFromLeft;
 
@@ -344,10 +345,11 @@ animation: 1s ease-out 0s 1 slideInFromLeft;
     animation: 1s ease-out 0s 1 slideInFromLeft;
 
     /* background: #333; */
-    padding: 30px;
+    padding: 20px;
   }
+
   .card{
-  background-image: url(images/kangaroos-in-sunset.jpg);
+  background-image: url(images/jaguar-bold.jpg);
   background-repeat: no-repeat;
   height:100%;
   background-size: cover;
@@ -356,11 +358,13 @@ animation: 1s ease-out 0s 1 slideInFromLeft;
   font-weight:900;
   color:Yellow;
   font-family:'El Messiri', sans-serif;
-  height:100%;
+  height:450px;
+  width: 550px;
   animation: 1s ease-out 0s 1 slideInFromLeft;
   }
+
   .Kard{
-    background-image: url(images/jaguar-bold.jpg);
+    background-image: url(images/kangaroos-in-sunset.jpg);
     background-repeat: no-repeat;
     height:100%;
     background-size: cover;
@@ -369,8 +373,9 @@ animation: 1s ease-out 0s 1 slideInFromLeft;
     font-weight:900;
     color:Yellow;
     font-family:'El Messiri', sans-serif;
-    height:100%;
+    height:450px;
     animation: 1s ease-out 0s 1 slideInFromLeft;
+    width:550px;
     }
 
 
@@ -512,51 +517,6 @@ button{
 
             }
 
-            .fa {
-              padding: 20px;
-              font-size: 30px;
-              width: 70px;
-              text-align: center;
-              text-decoration: none;
-              margin: 5px 2px;
-            }
-
-            .fa:hover {
-                opacity: 0.7;
-            }
-
-            .fa-facebook {
-              background: #3B5998;
-              color: white;
-            }
-
-            .fa-twitter {
-              background: #55ACEE;
-              color: white;
-            }
-
-            .fa-google {
-              background: #dd4b39;
-              color: white;
-            }
-
-            .fa-linkedin {
-              background: #007bb5;
-              color: white;
-            }
-
-
-
-            .fa-instagram {
-              background: #125688;
-              color: white;
-            }
-            .black{
-            background-color:black;
-            }
-            .footer{
-            animation: 1s ease-out 0s 1 slideInFromLeft;
-            }
             @media only screen and (max-width:800px) {
               /* For tablets: */
               .main {

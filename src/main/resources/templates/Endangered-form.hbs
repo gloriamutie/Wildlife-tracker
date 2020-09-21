@@ -3,11 +3,11 @@
         <h1>Wrong details? edit here</h1>
         <form class="formstyle" action="/endangered/{{editEndangered.id}}" method="post">
             <div class="form-group">
-                <label for="name">Edit name:</label>
+                <label for="name">Edit name</label>
                 <input id="name" placeholder="Enter Endangered animal name here......" name="name" class="form-control" type="text" value="{{editEndangered.name}}">
             </div>
             <div class="form-group">
-                <label for="age">Edit this endangered animal's age:</label>
+                <label for="age">Enter endangered animal's age</label>
                 <select id="age" name="age" class="form-control">
                     <option value="newborn">newborn</option>
                     <option value="young">young</option>
@@ -15,7 +15,7 @@
                 </select>
             </div>
             <div class="form-group">
-                <label for="health">Edit health:</label>
+                <label for="health">Edit health</label>
                 <select id="health" name="health" class="form-control">
                     <option value="Okay">healthy</option>
                     <option value="ill">ill</option>
@@ -26,22 +26,23 @@
             <button type="submit" class="button btn-warning">Submit</button>
         </form>
     {{else}}
-        <h1>New endangered here:</h1>
+        <h1>New endangered</h1>
         <form class="formstyle" action="/endangered" method="post">
             <div class="form-group">
-                <label for="name">Enter endangered animal's name</label>
+                <label for="name"> Endangered animal name</label>
                 <input id="name" placeholder="Enter Endangered animal name here......" name="name" class="form-control" type="text" value="">
             </div>
             <div class="form-group">
-                <label for="health">Edit this endangered animal's health:</label>
+                <label for="health">Edit this endangered animal's health</label>
                 <select id="health" name="health" class="form-control">
                     <option value="Okay">Okay</option>
                     <option value="ill">ill</option>
                     <option value="healthy">healthy</option>
                 </select>
             </div>
+
             <div class="form-group">
-                <label for="age">Edit this endangered animal's age:</label>
+                <label for="age">Edit this endangered animal's age</label>
                 <select id="age" name="age" class="form-control">
                     <option value="newborn">newborn</option>
                     <option value="young">young</option>

@@ -1,5 +1,9 @@
 {{#partial 'content'}}
-<!--    <h1 class="glow">WELCOME TO WILDLIFE TRACKER<br>HERE YOU'LL GET TO SEE ALL AVAILABLE SIGHTINGS</h1>-->
+<br>
+<br>
+<br>
+
+ <p class="glow"> Welcome to wildlife tracker <br> here you will get to see all available sightings </p>
 
     <div class="row">
     <div class="col-md-8">
@@ -10,13 +14,17 @@
                 {{#each sightings }}
 
                         <p>Sighting reported by Ranger {{rangerName}} at {{location}}
-                            <a href="/animals/{{animalId}}/sightings/{{id}}" class="button btn-warning btn-sm"style="float: right;">SEE MORE</a>
+                            <a href="/animals/{{animalId}}/sightings/{{id}}" class="button btn-warning btn-sm"style="float: right;">See more</a>
 
                         </p>
-                        <hr>
+                        <br>
+                        <br>
+                    <br>
 
                 {{/each}}
             {{else}}
+                <br>
+            <br>
                 <p>No sightings reported!!</p>
             {{/if}}
         </div>
