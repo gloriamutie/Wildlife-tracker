@@ -2,21 +2,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Charm:wght@700&family=Merienda+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=El+Messiri&display=swap');
 
- * {
-    margin: 0;
+*{
+  margin: 0;
     padding: 0;
     border: 0;
 }
 
  body{
-background-image: url('images/impala.jpg');
+/*background-image: url('images/impala.jpg');*/
 background-repeat: no-repeat;
 height:100%;
 background-size: cover;
-background-position: center ;
+background-position: center center;
+background-attachment: fixed;
+background-size: cover;
+background-color: #464646;
 font-family: 'El Messiri', sans-serif;
-color: yellow;
-font-weight:900;
+color: white;
+font-weight:100;
 font-size:20px;
 border-style:inset;
 border-color:green;
@@ -564,5 +567,12 @@ button{
              .menu, .main, .right {
                width: 100%;
              }
+
+             @media only screen and (max-width: 767px) {
+          body {
+                      background-image: url(images/impala.jpg);
+  }
+}
+
 
 
