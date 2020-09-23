@@ -1,10 +1,12 @@
  # Wildlife Tracker
 A java spark app for the Forest Service to conduct an environmental impact study.
 
-##Livelink
+## Livelink
+
+ https://gwildlife.herokuapp.com/
  
 
-##Author
+## Author
 Gloria Mutie
 
 ## Technologies and frameworks used
