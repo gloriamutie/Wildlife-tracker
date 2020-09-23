@@ -41,6 +41,11 @@ In PSQL:
 
 ![](src/main/resources/public/images/screenshot4.png)
 
+## Licensed
+
+[![MIT Licence](https://badges.frapsoft.com/os/mit/mit-125x28.png?v=103)](LICENSE)
+
+
 
 
 
