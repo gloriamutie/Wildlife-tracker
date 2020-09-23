@@ -20,7 +20,8 @@ public class DB {
 
         try {
             if (System.getenv("DATABASE_URL") == null) {
-                dbUri = new URI("postgres://localhost:5432/wildlife_tracker");
+            	dbUri = new URI("postgresql://ec2-52-200-134-180.compute-1.amazonaws.com:543A" + "2/d240l5t81o04nh");
+		           
                 
             } else {
                 dbUri = new URI(System.getenv("DATABASE_URL"));

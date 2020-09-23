@@ -1,15 +1,19 @@
 {{#partial "content"}}
+    <br>
+    <br>
+    <br>
+    <br>
     {{#if editSighting}}
         <div style="color:purple; text-align: center;">
-            <h1>INVALID CREDENTIALS?EDIT HERE:</h1>
+            <h1>Invalid credentials? edit here:</h1>
         </div>
         <form class="formstyle" action="/endangeredsighting/{{editSighting.id}}" method="post">
             <div class="form-group">
-                <label for="name">INVALID RANGER NAME?EDIT HERE:</label>
+                <label for="name">Invalid ranger name? edit here:</label>
                 <input id="name"  placeholder="Enter Ranger's name here......"name="name" class="form-control" type="text" value="{{sighting.rangerName}}">
             </div>
             <div class="form-group">
-                <label for="location">EDIT YOUR LOCATION:</label>
+                <label for="location">Your Location:</label>
                 <select id="location" name="location" class="form-control">
                     <option value="Riverbank">Riverbank</option>
                     <option value="Forest clearing">Forest clearing</option>
@@ -23,7 +27,7 @@
                 </select>
             </div>
             <div class="form-group">
-                <label for="animalId">EDIT ANIMAL HERE</label>
+                <label for="animalId">Animal</label>
                 <select id="animalId" name="animalId" class="form-control">
                     {{#each endangeredAnimals}}
                         <option value="{{id}}">{{name}}</option>
@@ -31,22 +35,22 @@
                 </select>
                 <br>
                 <br>
-                <a href="/endangered/new" class="button btn-warning">ADD NEW ANIMAL TO LIST HERE</a>
+                <a href="/endangered/new" class="button btn-warning">New animal</a>
                 <br>
                 <br>
                 <br>
 
             </div>
-            <button type="submit" class="button  btn-warning">SUBMIT</button>
+            <button type="submit" class="button  btn-warning">Submit</button>
         </form>
     {{else}}
 
-            <h2 class="glow">REPORT SIGHTING HERE</h2>
+            <h2 class="glow">Enter Sighting</h2>
 
         <form class="formstyle" action="/endangeredsighting" method="post">
             {{#if endangeredAnimals}}
                 <div class="form-group">
-                    <label for="rangerName">Enter ranger's name:</label>
+                    <label for="rangerName">Enter ranger's name</label>
                     <input id="rangerName" placeholder="Enter Ranger's name here......" name="rangerName" class="form-control" type="text" value="">
                 </div>
                 <div class="form-group">
@@ -64,7 +68,7 @@
                     </select>
                 </div>
                 <div class="form-group">
-                    <label for="animalId">Enter endangered animal:</label>
+                    <label for="animalId">Enter endangered animal</label>
                     <select id="animalId" name="animalId" class="form-control">
                         {{#each endangeredAnimals}}
                             <option value="{{id}}">{{name}}</option>
@@ -72,18 +76,21 @@
                     </select>
                     <br>
                     <br>
-                    <a href="/endangered/new" class="button btn-warning">ADD NEW ANIMAL TO LIST HERE</a>
+                    <a href="/endangered/new" class="button btn-warning">New animal</a>
                     <br>
                     <br>
                     <br>
-                    <button type="submit" class="button  btn-warning">SUBMIT</button>
+                    <button type="submit" class="button  btn-warning">Submit</button>
 
                 </div>
+                <br>
+                <br>
+                <br>
             {{else}}
-                <h2 class="glow">NO ANIMALS ON OUR LIST.ADD TO LIST BEFORE REPORTING</h2>
+                <h2 class="glow">No animal listed <br> Add to list before submitting</h2>
             <br>
             <br>
-                <a href="/endangered/new" class="button btn-warning">ADD NEW ANIMAL TO LIST HERE</a>
+                <a href="/endangered/new" class="button btn-warning">New animal</a>
 
             {{/if}}
         </form>

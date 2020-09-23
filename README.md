@@ -2,7 +2,7 @@
 A java spark app for the Forest Service to conduct an environmental impact study.
 
 ##Livelink
- https://gwildlife.herokuapp.com/ 
+ 
 
 ##Author
 Gloria Mutie
@@ -26,8 +26,18 @@ In PSQL:
     
 ## Testing
 
-   ```java
+   ```java```
     gradle test
-```
+
+## Screenshots
+
+![](src/main/resources/public/images/screenshot1.png)
+![](src/main/resources/public/images/screenshot2.png)
+![](src/main/resources/public/images/screenshot3.png)
+![](src/main/resources/public/images/screenshot4.png)
+
+
+
+
 
 

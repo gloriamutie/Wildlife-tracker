@@ -1,6 +1,6 @@
 {{#partial "content"}}
 
-<h1 class="glow">WELCOME TO WILDLIFE TRACKER<br>HERE YOU'LL GET TO SEE ALL ANIMALS ON OUR LIST</h1>
+<h1 class="glow">Welcome to wildlife tracker<br>HERE YOU'LL GET TO SEE ALL ANIMALS ON OUR LIST</h1>
 <br>
 <br>
 <br>
@@ -9,7 +9,7 @@
       <div class="row">
              <div class="col-md-6">
                 <div class="card">
-                   <h1 class="glow">ENDANGERED ANIMALS</h1><br><br>
+                   <h1 class="glow">Endangered  Animals</h1><br><br>
                       {{#if endangeredAnimals}}
                       {{#each endangeredAnimals}}
                           <p>{{name}}</p>
@@ -17,7 +17,7 @@
                       {{/each}}
 
                       {{else}}
-                          <a href="/endangered/new" class="btn-warning btn-sm">ADD A NEW ENDANGERED ANIMAL</a>
+                          <a href="/endangered/new" class="btn-warning btn-sm">New animal</a>
 
                       {{/if}}
                     </div>
@@ -25,7 +25,7 @@
 
               <div class="col-md-6">
                 <div class="Kard">
-                   <h1  class="glow"style="text-align:center;">NON-ENDANGERED ANIMALS</h1><br><br>
+                   <h1  class="glow"style="text-align:center;">Non-endangered animals</h1><br><br>
 
                    {{#if animals}}
                     {{#each animals}}
@@ -35,7 +35,7 @@
 
 
                        {{else}}
-                       <a href="/animals/new" class="btn-warning btn-sm">ADD NEW NON-ENDANGERED ANIMAL</a>
+                       <a href="/animals/new" class="btn-warning btn-sm">New Non-endangered animal</a>
 
                         {{/if}}
                </div>

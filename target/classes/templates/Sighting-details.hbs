@@ -3,18 +3,18 @@
         <div class="col-md-6">
                <div class="Details">
 
-                     <p>REPORTED BY: {{ sighting.rangerName }}</p>
-                     <p>TIME REPORTED {{ sighting.createdAt }}</p>
-                     <p>LOCATION OF SIGHTING: {{ sighting.location }}</p>
+                     <p>Reported by: {{ sighting.rangerName }}</p>
+                     <p>Time reported: {{ sighting.createdAt }}</p>
+                     <p>Location of sighting: {{ sighting.location }}</p>
 
                      {{#if animal}}
-                     <p> NAME OF SIGHTING:{{ animal.name }}</p>
-                     <p>Type OF SIGHTING: {{animal.type}}</p>
+                     <p> Name of sighting:{{ animal.name }}</p>
+                     <p>Type of sighting: {{animal.type}}</p>
                          <div class="row">
                               <div class="col-md-12">
                               <div class = "col-md-12">
                               <a class="btn btn-warning" href="/animals/sighting/{{sighting.id}}/edit">Edit</a>
-                              <a class="btn btn-warning" href="/animals/{{sighting.animalId}}/sightings/{{sighting.id}}/delete">DELETE</a>
+                              <a class="btn btn-warning" href="/animals/{{sighting.animalId}}/sightings/{{sighting.id}}/delete">Delete</a>
                          </div>
                       </div>
                  </div>
@@ -25,7 +25,7 @@
                           <div class="col-md-12">
                            <div class = "col-md-12">
                             <a class="btn btn-warning" href="/endangered/sighting/{{sighting.id}}/edit">Edit</a>
-                            <a class="btn btn-warning" href="/animals/{{sighting.animalId}}/sightings/{{sighting.id}}/delete">DELETE</a>
+                            <a class="btn btn-warning" href="/animals/{{sighting.animalId}}/sightings/{{sighting.id}}/delete">Delete</a>
                            </div>
                          </div>
                       </div>

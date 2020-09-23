@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="16" failures="0" name="models.AnimalTest" time="0.651" errors="0" skipped="0">
+<testsuite tests="16" failures="0" name="models.AnimalTest" time="2.391" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="java.vm.version" value="11.0.8+10-post-Ubuntu-0ubuntu120.04"/>
@@ -62,19 +62,19 @@
     <property name="sun.cpu.isalist" value=""/>
   </properties>
   <testcase classname="models.AnimalTest" name="getTypeReturnsCorrectAnimalType" time="0"/>
-  <testcase classname="models.AnimalTest" name="save_animalsAreSavedCorrectlyInDatabase" time="0.135"/>
-  <testcase classname="models.AnimalTest" name="getNameReturnsCorrectName_String" time="0.007"/>
-  <testcase classname="models.AnimalTest" name="saveAssignsIdToAnimal" time="0.047"/>
-  <testcase classname="models.AnimalTest" name="saveThrowsExceptionIfNameNull_true" time="0.009"/>
-  <testcase classname="models.AnimalTest" name="update_nameCannotBeNull" time="0.026"/>
-  <testcase classname="models.AnimalTest" name="findSightingsReturnsSightingsRelatedToAnimalInstance_true" time="0.085"/>
-  <testcase classname="models.AnimalTest" name="equals_returnsTrueIfNamesAreEqual" time="0.009"/>
-  <testcase classname="models.AnimalTest" name="findByIdReturnsCorrectInstanceOfAnimal_true" time="0.039"/>
-  <testcase classname="models.AnimalTest" name="update_throwsExceptionIfNameNull" time="0.019"/>
-  <testcase classname="models.AnimalTest" name="deleteByIdDeletesCorrectAnimal_true" time="0.069"/>
-  <testcase classname="models.AnimalTest" name="clearAllClearsAllInstances_true" time="0.032"/>
-  <testcase classname="models.AnimalTest" name="AnimalInstantiatesCorrectly_true" time="0.007"/>
-  <testcase classname="models.AnimalTest" name="allReturnsAllInstancesOfAnimal_true" time="0.101"/>
-  <testcase classname="models.AnimalTest" name="saveCatchesExeptions_true" time="0.006"/>
-  <testcase classname="models.AnimalTest" name="updateAnimalInstanceIsUpdatedCorrectly_true" time="0.06"/>
+  <testcase classname="models.AnimalTest" name="save_animalsAreSavedCorrectlyInDatabase" time="0.168"/>
+  <testcase classname="models.AnimalTest" name="getNameReturnsCorrectName_String" time="0.027"/>
+  <testcase classname="models.AnimalTest" name="saveAssignsIdToAnimal" time="0.169"/>
+  <testcase classname="models.AnimalTest" name="saveThrowsExceptionIfNameNull_true" time="0.024"/>
+  <testcase classname="models.AnimalTest" name="update_nameCannotBeNull" time="0.137"/>
+  <testcase classname="models.AnimalTest" name="findSightingsReturnsSightingsRelatedToAnimalInstance_true" time="0.387"/>
+  <testcase classname="models.AnimalTest" name="equals_returnsTrueIfNamesAreEqual" time="0.023"/>
+  <testcase classname="models.AnimalTest" name="findByIdReturnsCorrectInstanceOfAnimal_true" time="0.155"/>
+  <testcase classname="models.AnimalTest" name="update_throwsExceptionIfNameNull" time="0.165"/>
+  <testcase classname="models.AnimalTest" name="deleteByIdDeletesCorrectAnimal_true" time="0.347"/>
+  <testcase classname="models.AnimalTest" name="clearAllClearsAllInstances_true" time="0.231"/>
+  <testcase classname="models.AnimalTest" name="AnimalInstantiatesCorrectly_true" time="0.027"/>
+  <testcase classname="models.AnimalTest" name="allReturnsAllInstancesOfAnimal_true" time="0.262"/>
+  <testcase classname="models.AnimalTest" name="saveCatchesExeptions_true" time="0.043"/>
+  <testcase classname="models.AnimalTest" name="updateAnimalInstanceIsUpdatedCorrectly_true" time="0.226"/>
 </testsuite>

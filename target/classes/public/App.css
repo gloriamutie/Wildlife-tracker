@@ -2,16 +2,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Charm:wght@700&family=Merienda+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=El+Messiri&display=swap');
 
+*{
+  margin: 0;
+    padding: 0;
+    border: 0;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
 
  body{
-background-image: url('images/habitats_hero_rainforest.jpg');
+background-image: url('images/impala.jpg');
 background-repeat: no-repeat;
 height:100%;
 background-size: cover;
-background-position: center ;
+background-position: center center;
+background-attachment: fixed;
+background-size: cover;
+background-color: #464646;
 font-family: 'El Messiri', sans-serif;
-color: yellow;
-font-weight:900;
+color: white;
+font-weight:100;
 font-size:20px;
 border-style:inset;
 border-color:green;
@@ -19,7 +33,7 @@ border-weight:80px;
 
 }
 .sight{
-background-color:green;
+background-color:#dda0dd;
 font-size:20px;
 font-weight:900;
 color:;
@@ -27,21 +41,26 @@ font-family:'El Messiri', sans-serif;
  height:100%;
  animation: 1s ease-out 0s 1 slideInFromLeft;
 }
+
 .Details{
 background-image: url('images/jaguar-bold.jpg');
 background-repeat: no-repeat;
-height:100%;
-background-size: cover;
+/*background-size: cover;*/
+background-size: 90% 90%;
 background-position: center ;
 font-size:20px;
 font-weight:900;
-color:Yellow;
+cjolor: white;
 font-family:'El Messiri', sans-serif;
- height:100%;
  animation: 1s ease-out 0s 1 slideInFromLeft;
+margin-top: 100px;
+margin-left: -40px;
+padding: 25px 50px 75px 100px;
+float:left;
+
 }
 .animal{
-background-image: url('https://www.silverkris.com/wp-content/uploads/2017/02/Kaziranga-India_Free-Stock-Image_Pexels.com_.jpeg');
+background-image: url();
 background-repeat: no-repeat;
 height:100%;
 background-size: cover;
@@ -50,7 +69,7 @@ font-family: 'El Messiri', sans-serif;
 animation: 1s ease-out 0s 1 slideInFromLeft;
 }
 .gs{
-color: yellow;
+color: #dda0dd;
 font-family: 'El Messiri', sans-serif;
 font-size:20px;
 font-weight:900;
@@ -58,7 +77,7 @@ font-weight:900;
 
 .gold{
 font-family: 'El Messiri', sans-serif;
-color:gold ;
+color:#dda0dd ;
 font-size:40px;
 font-weight:bold;
 }
@@ -175,7 +194,7 @@ font-size: calc(2px + 18vh);
 .form{
   position: relative;
   z-index: 3;
-  width: 500px;
+  width: 100px;
   margin-top: 15vh;
   color: white;
   font-weight:bold;
@@ -197,7 +216,7 @@ color: white;
 .form>input[type=text],
 .form>input[type=number]{
   background: none;
-  width: 100%;
+  width: 50%;
   padding: 10px;
   margin: 10px 0;
   border: none;
@@ -219,7 +238,7 @@ color: white;
 .form input[type=submit]{
   margin-top: 10px;
   background-color:red;
-  width: 100%;
+  width: 50%;
   padding: 5px;
   color: white;
   font-size: 20px
@@ -276,15 +295,15 @@ color: white;
 }
 .glows {
   font-size: 30px;
-  color: yellow;
-  font-weight:900;
+  color: blue;
+  font-weight:100;
   text-align: center;
 
 }
 .glow {
-  font-size: 40px;
-  color: yellow;
-  font-weight:900;
+  font-size: 20px;
+  color: blue;
+  font-weight:100;
   text-align: center;
   -webkit-animation: glow 1s ease-in-out infinite alternate;
   -moz-animation: glow 1s ease-in-out infinite alternate;
@@ -322,6 +341,7 @@ color: white;
       transform: translateX(0);
     }
   }
+
 .formstyle{
 animation: 1s ease-out 0s 1 slideInFromLeft;
 
@@ -331,10 +351,11 @@ animation: 1s ease-out 0s 1 slideInFromLeft;
     animation: 1s ease-out 0s 1 slideInFromLeft;
 
     /* background: #333; */
-    padding: 30px;
+    padding: 20px;
   }
+
   .card{
-  background-image: url(images/kangaroos-in-sunset.jpg);
+  background-image: url(images/jaguar-bold.jpg);
   background-repeat: no-repeat;
   height:100%;
   background-size: cover;
@@ -343,21 +364,24 @@ animation: 1s ease-out 0s 1 slideInFromLeft;
   font-weight:900;
   color:Yellow;
   font-family:'El Messiri', sans-serif;
-  height:100%;
+  height:450px;
+  width: 550px;
   animation: 1s ease-out 0s 1 slideInFromLeft;
   }
+
   .Kard{
-    background-image: url(images/jaguar-bold.jpg);
+    background-image: url(images/kangaroos-in-sunset.jpg);
     background-repeat: no-repeat;
     height:100%;
     background-size: cover;
     background-position: center ;
     font-size:20px;
     font-weight:900;
-    color:Yellow;
+    color:#dda0dd;
     font-family:'El Messiri', sans-serif;
-    height:100%;
+    height:450px;
     animation: 1s ease-out 0s 1 slideInFromLeft;
+    width:550px;
     }
 
 
@@ -370,7 +394,7 @@ animation: 1s ease-out 0s 1 slideInFromLeft;
 		top: -50%;
 		width: 200%;
 		height: 200%;
-		background-color: #399953;
+		background-color: #dda0dd;
 		background-repeat: no-repeat;
 		background-size: 50% 50%, 50% 50%;
 		background-position: 0 0, 100% 0, 100% 100%, 0 100%;
@@ -492,62 +516,13 @@ button{
           box-shadow: 15px -15px 20px rgb(255, 255, 255);
         }
         ::placeholder {
-              color: gold;
+              color: black;
             }
             hr{
-             background-color:green;
+             background-color:#d49ed4;
 
             }
-            .title{
-            background-image: url("/images/kangaroos-in-sunset.jpg");
-            background-size:cover;
 
-            }
-            .fa {
-              padding: 20px;
-              font-size: 30px;
-              width: 70px;
-              text-align: center;
-              text-decoration: none;
-              margin: 5px 2px;
-            }
-
-            .fa:hover {
-                opacity: 0.7;
-            }
-
-            .fa-facebook {
-              background: #3B5998;
-              color: white;
-            }
-
-            .fa-twitter {
-              background: #55ACEE;
-              color: white;
-            }
-
-            .fa-google {
-              background: #dd4b39;
-              color: white;
-            }
-
-            .fa-linkedin {
-              background: #007bb5;
-              color: white;
-            }
-
-
-
-            .fa-instagram {
-              background: #125688;
-              color: white;
-            }
-            .black{
-            background-color:black;
-            }
-            .footer{
-            animation: 1s ease-out 0s 1 slideInFromLeft;
-            }
             @media only screen and (max-width:800px) {
               /* For tablets: */
               .main {
@@ -563,5 +538,13 @@ button{
              .menu, .main, .right {
                width: 100%;
              }
+
+             @media only screen and (max-width: 767px) {
+          body {
+                      background-image: url(images/impala.jpg);
+  }
+}
+
+
 
 
