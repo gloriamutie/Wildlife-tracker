@@ -34,8 +34,11 @@ In PSQL:
 ## Screenshots
 
 ![](src/main/resources/public/images/screenshot1.png)
+
 ![](src/main/resources/public/images/screenshot2.png)
+
 ![](src/main/resources/public/images/screenshot3.png)
+
 ![](src/main/resources/public/images/screenshot4.png)
 
 
